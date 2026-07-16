@@ -115,7 +115,7 @@ const C = {
     },
     testimonial: {
       draftTag: 'Exemple — à valider avec Vincent',
-      quote: "Le Burst a fait bouger nos équipes plus en deux jours que des mois de bonnes intentions. Voir nos développeurs livrer une démo fonctionnelle sur du vrai code — en collaborant avec l’IA plutôt qu’en la subissant — c’est exactement la transformation qu’on vise chez Croesus.",
+      quote: "Le Burst a fait bouger nos équipes plus en deux jours que des mois de bonnes intentions. Voir nos développeurs livrer une démo fonctionnelle en collaborant avec l’IA accélère grandement la transformation qu’on vise chez Croesus.",
       name: 'Vincent Levesque',
       role: 'Vice-Président, gestion de produit · Croesus',
     },
@@ -261,7 +261,7 @@ const C = {
     },
     testimonial: {
       draftTag: 'Draft — to approve with Vincent',
-      quote: "The Burst moved our teams further in two days than months of good intentions. Watching our developers ship a working demo on real code — collaborating with AI instead of just watching it — is exactly the transformation we’re driving at Croesus.",
+      quote: "The Burst moved our teams further in two days than months of good intentions. Watching our developers ship a working demo while collaborating with AI greatly accelerates the transformation we’re driving at Croesus.",
       name: 'Vincent Levesque',
       role: 'Vice-President, Product Management · Croesus',
     },
