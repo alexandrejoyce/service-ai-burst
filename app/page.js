@@ -89,7 +89,7 @@ const C = {
         },
         {
           key: 'C', name: 'Parcours', tag: 'Tout inclus', tagline: 'Burst + onboarding + formation + accompagnement',
-          price: '55 à 85 k$', priceUnit: 'programme complet', s1: 'Sur mesure', s1l: 'durée adaptée', s2: 'illimité', s2l: 'participants / équipes',
+          price: '40 à 60 k$', priceUnit: 'programme complet', s1: 'Sur mesure', s1l: 'durée adaptée', s2: 'illimité', s2l: 'participants / équipes',
           bullets: ['Burst complet inclus', 'Onboarding et formation des équipes', 'Accompagnement et suivis de projets', 'Participants et équipes illimités', 'Livrable : capacité d’innovation ancrée + montée en charge'],
           cta: 'Démarrer le parcours →', accent: '#004764', accentHover: '#00648C', bg: '#f0f4f7', line: '#c0ccd6',
         },
@@ -235,7 +235,7 @@ const C = {
         },
         {
           key: 'C', name: 'Journey', tag: 'Full program', tagline: 'Burst + onboarding + training + coaching',
-          price: '$55–85k', priceUnit: 'full program', s1: 'Custom', s1l: 'adapted duration', s2: 'unlimited', s2l: 'participants / teams',
+          price: '$40–60k', priceUnit: 'full program', s1: 'Custom', s1l: 'adapted duration', s2: 'unlimited', s2l: 'participants / teams',
           bullets: ['Full Burst included', 'Team onboarding and training', 'Coaching and project follow-ups', 'Unlimited participants and teams', 'Deliverable: embedded innovation capability + scale-up'],
           cta: 'Start the journey →', accent: '#004764', accentHover: '#00648C', bg: '#f0f4f7', line: '#c0ccd6',
         },
