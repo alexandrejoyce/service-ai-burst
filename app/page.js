@@ -76,19 +76,19 @@ const C = {
       sketch: 'Esquisse — sur mesure',
       items: [
         {
-          key: 'A', name: 'Adoption', tag: 'Mode immersion', tagline: 'Apprendre, pratiquer et échanger pour adopter l’IA pour de vrai',
+          key: 'A', name: 'Adoption', tag: 'Mode immersion', tagline: 'Apprendre, pratiquer et\néchanger pour adopter l’IA',
           price: '6 à 12 k$', priceUnit: 'selon la durée', s1: '0,5 – 1 j', s1l: 'en immersion', s2: '4 – 20', s2l: 'participants',
           bullets: ['Apprentissage guidé des outils et des bonnes pratiques', 'Un défi concret à réaliser en équipe — pas juste de la théorie', 'Échanges entre pairs sur les apprentissages et les blocages', 'Animateur + spécialiste pour vous faire progresser', 'Livrable : premières démos + réflexes d’usage au quotidien'],
           cta: 'Réserver ma place →', accent: '#008cc1', accentHover: '#00648C', bg: '#f0f7fb', line: '#c8dde8',
         },
         {
-          key: 'B', name: 'Burst', tag: 'Mode projet', tagline: '2,5 jours pour livrer sur vos vrais projets',
+          key: 'B', name: 'Burst', tag: 'Mode projet', tagline: '2,5 jours pour livrer\nsur vos projets',
           price: '25 à 40 k$', priceUnit: 'pour l’événement complet', s1: '2,5 jours', s1l: 'onboarding + 2 jours', s2: '3 – 6', s2l: 'équipes',
           bullets: ['Jour 0 d’onboarding et de formation', 'Équipes sur de vrais projets, pas des exemples jouets', 'Démos fonctionnelles en direct', 'Animateur + spécialiste tout au long', 'Livrable : démos + skills réutilisables + nouvelles pratiques'],
           cta: 'Réserver un Burst →', accent: '#238251', accentHover: '#1a6b3a', bg: '#f2f8f4', line: '#b8d8c4',
         },
         {
-          key: 'C', name: 'Parcours', tag: 'Tout inclus', tagline: 'Burst + onboarding + formation + accompagnement',
+          key: 'C', name: 'Parcours', tag: 'Tout inclus', tagline: 'Burst + onboarding +\nformation + accompagnement',
           price: '40 à 60 k$', priceUnit: 'programme complet', s1: 'Sur mesure', s1l: 'durée adaptée', s2: 'illimité', s2l: 'participants / équipes',
           bullets: ['Burst complet inclus', 'Onboarding et formation des équipes', 'Accompagnement et suivis de projets', 'Participants et équipes illimités', 'Livrable : capacité d’innovation ancrée + montée en charge'],
           cta: 'Démarrer le parcours →', accent: '#004764', accentHover: '#00648C', bg: '#f0f4f7', line: '#c0ccd6',
@@ -222,19 +222,19 @@ const C = {
       sketch: 'Sketch — custom',
       items: [
         {
-          key: 'A', name: 'Adoption', tag: 'Immersion mode', tagline: 'Learn, practise and exchange to adopt AI for real',
+          key: 'A', name: 'Adoption', tag: 'Immersion mode', tagline: 'Learn, practise and\nexchange to adopt AI',
           price: '$6–12k', priceUnit: 'by duration', s1: '0.5 – 1 d', s1l: 'immersive', s2: '4 – 20', s2l: 'participants',
           bullets: ['Guided learning of the tools and best practices', 'A concrete challenge to tackle as a team — not just theory', 'Peer exchange on learnings and blockers', 'Facilitator + specialist to drive your progress', 'Deliverable: first demos + everyday usage reflexes'],
           cta: 'Book my seat →', accent: '#008cc1', accentHover: '#00648C', bg: '#f0f7fb', line: '#c8dde8',
         },
         {
-          key: 'B', name: 'Burst', tag: 'Project mode', tagline: '2.5 days to ship on your real projects',
+          key: 'B', name: 'Burst', tag: 'Project mode', tagline: '2.5 days to ship\non your projects',
           price: '$25–40k', priceUnit: 'for the full event', s1: '2.5 days', s1l: 'onboarding + 2 days', s2: '3 – 6', s2l: 'teams',
           bullets: ['Day 0 onboarding and training', 'Teams on real projects, not toy examples', 'Live, working demos', 'Facilitator + specialist throughout', 'Deliverable: demos + reusable skills + new practices'],
           cta: 'Book a Burst →', accent: '#238251', accentHover: '#1a6b3a', bg: '#f2f8f4', line: '#b8d8c4',
         },
         {
-          key: 'C', name: 'Journey', tag: 'Full program', tagline: 'Burst + onboarding + training + coaching',
+          key: 'C', name: 'Journey', tag: 'Full program', tagline: 'Burst + onboarding +\ntraining + coaching',
           price: '$40–60k', priceUnit: 'full program', s1: 'Custom', s1l: 'adapted duration', s2: 'unlimited', s2l: 'participants / teams',
           bullets: ['Full Burst included', 'Team onboarding and training', 'Coaching and project follow-ups', 'Unlimited participants and teams', 'Deliverable: embedded innovation capability + scale-up'],
           cta: 'Start the journey →', accent: '#004764', accentHover: '#00648C', bg: '#f0f4f7', line: '#c0ccd6',
@@ -544,7 +544,7 @@ export default function Home() {
             <h2 className="text-3xl sm:text-4xl font-bold" style={{ color: '#004764' }}>{t.formules.title}</h2>
             <p className="mt-4 text-base max-w-xl mx-auto" style={{ color: '#00648C' }}>{t.formules.sub}</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 items-stretch">
             {t.formules.items.map((f) => (
               <div key={f.key} className="rounded-3xl overflow-hidden flex flex-col h-full bg-white"
                 style={{ border: f.draft ? '2px dashed #9bb2bf' : `2px solid ${f.accent}`, boxShadow: f.draft ? 'none' : '0 12px 32px -22px rgba(0,71,100,0.35)' }}>
@@ -552,9 +552,9 @@ export default function Home() {
                   {f.draft && (
                     <span className="inline-block text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1 rounded-full mb-3" style={{ color: '#5b7280', border: '1px dashed #9bb2bf' }}>{t.formules.sketch}</span>
                   )}
-                  <span className="text-xs font-semibold uppercase tracking-widest mb-3 block" style={{ color: f.draft ? '#7d94a1' : 'rgba(255,255,255,0.7)' }}>Formule {f.key} · {f.tag}</span>
+                  <span className="text-xs font-semibold uppercase tracking-widest mb-3 block" style={{ color: f.draft ? '#7d94a1' : 'rgba(255,255,255,0.7)' }}>Formule {f.key}<br />{f.tag}</span>
                   <h3 className="text-xl font-bold mb-1 leading-tight min-h-[3.25rem]" style={{ color: f.draft ? '#004764' : '#fff' }}>{f.name}</h3>
-                  <p className="text-xs min-h-[2.25rem]" style={{ color: f.draft ? '#00648C' : 'rgba(255,255,255,0.8)' }}>{f.tagline}</p>
+                  <p className="text-xs min-h-[2.25rem] whitespace-pre-line" style={{ color: f.draft ? '#00648C' : 'rgba(255,255,255,0.8)' }}>{f.tagline}</p>
                 </div>
                 <div className="px-6 py-6 flex flex-col flex-1" style={{ backgroundColor: f.bg }}>
                   <div className="mb-5 pb-5" style={{ borderBottom: `1px solid ${f.line}` }}>
