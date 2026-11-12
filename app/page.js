@@ -557,11 +557,6 @@ export default function Home() {
                   <p className="text-xs min-h-[2.25rem] whitespace-pre-line" style={{ color: f.draft ? '#00648C' : 'rgba(255,255,255,0.8)' }}>{f.tagline}</p>
                 </div>
                 <div className="px-6 py-6 flex flex-col flex-1" style={{ backgroundColor: f.bg }}>
-                  <div className="mb-5 pb-5" style={{ borderBottom: `1px solid ${f.line}` }}>
-                    <div className="text-2xl font-bold" style={{ color: '#004764' }}>{f.price}</div>
-                    <div className="text-xs mt-0.5" style={{ color: '#00648C' }}>{f.priceUnit}</div>
-                    <div className="text-[10px] mt-1 italic" style={{ color: '#9bb2bf' }}>{t.formules.priceNote}</div>
-                  </div>
                   <div className="flex gap-4 mb-6">
                     <div>
                       <div className="text-xl font-bold" style={{ color: '#004764' }}>{f.s1}</div>
