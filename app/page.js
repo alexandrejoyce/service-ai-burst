@@ -208,6 +208,7 @@ const COPY = {
       thanksD: 'On vous revient rapidement pour planifier votre Burst.',
     },
     footer: { tagline: 'Le Burst — service IA ·|Tous droits réservés' },
+    top: 'Retour en haut',
   },
 
   en: {
@@ -394,6 +395,7 @@ const COPY = {
       thanksD: 'We’ll get back to you shortly to plan your Burst.',
     },
     footer: { tagline: 'The Burst — AI service ·|All rights reserved' },
+    top: 'Back to top',
   },
 };
 
@@ -408,7 +410,8 @@ const NNBSP = ' ';
 function fixSpaces(str, lang) {
   let s = str
     .replace(/(\d) (?=\S)/g, `$1${NBSP}`)
-    .replace(/([–—]) (?=\d)/g, `$1${NBSP}`);
+    // A word joiner too: browsers may break after a dash even before a non-breaking space.
+    .replace(/([–—]) (?=\d)/g, `$1\u2060${NBSP}`);
   if (lang === 'fr') {
     s = s
       .replace(/ ([?!;»])/g, `${NNBSP}$1`)
@@ -471,6 +474,12 @@ const ICON_PATHS = {
       <path d="M22 5h-4" />
     </>
   ),
+  arrowUp: (
+    <>
+      <path d="m5 12 7-7 7 7" />
+      <path d="M12 19V5" />
+    </>
+  ),
 };
 
 function Icon({ name, size = 22 }) {
@@ -508,6 +517,19 @@ export default function Home() {
   const [outils, setOutils] = useState([]);
   const [delai, setDelai] = useState(null);
   const [submitted, setSubmitted] = useState(false);
+
+  /* ---- Back-to-top button: shows once the hero is out of view ---- */
+  const [showTop, setShowTop] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setShowTop(window.scrollY > 600);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+  const backToTop = () => {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+  };
 
   const toggleOutil = (o) =>
     setOutils((prev) => (prev.includes(o) ? prev.filter((x) => x !== o) : [...prev, o]));
@@ -1003,10 +1025,23 @@ export default function Home() {
       </section>
 
       {/* ---------------- Footer ---------------- */}
-      <footer className="py-8 px-6 sm:px-8 max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-sm" style={{ borderTop: '1px solid #e8e7e6', color: '#00648C' }}>
+      <footer className="pt-8 pb-24 sm:pb-8 px-6 sm:px-8 max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-sm" style={{ borderTop: '1px solid #e8e7e6', color: '#00648C' }}>
         <span>© {new Date().getFullYear()} innovation.expert</span>
         <span className="text-center sm:text-right"><Phrases text={t.footer.tagline} /></span>
       </footer>
+
+      {/* ---------------- Back to top ---------------- */}
+      <button
+        type="button"
+        onClick={backToTop}
+        aria-label={t.top}
+        title={t.top}
+        aria-hidden={!showTop}
+        tabIndex={showTop ? 0 : -1}
+        className={`fixed bottom-5 right-5 sm:bottom-8 sm:right-8 z-50 w-12 h-12 rounded-full flex items-center justify-center text-white bg-[#008cc1] hover:bg-[#00648C] shadow-[0_10px_24px_-10px_rgba(0,71,100,0.6)] transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0BB89B] ${showTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3 pointer-events-none'}`}
+      >
+        <Icon name="arrowUp" />
+      </button>
 
     </main>
   );
