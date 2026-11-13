@@ -27,7 +27,7 @@ const COPY = {
   fr: {
     nav: { burst: 'Le Burst', pourQui: 'Pour qui', formules: 'Formules', cta: 'Réserver un Burst' },
     hero: {
-      eyebrow: 'Service IA · innovation.expert',
+      eyebrow: 'Burst IA · Adopter l’IA par la pratique',
       title1: 'Vos équipes,',
       title2: 'prêtes à',
       titleAccent: 'créer avec l’IA.',
@@ -38,9 +38,10 @@ const COPY = {
     problem: {
       eyebrow: 'Le constat',
       title: 'L’IA change tout —|mais pas toute seule.',
-      lead: "La plupart des organisations achètent des licences, font une démo… et rien ne change dans la façon dont les équipes travaillent vraiment. Les vrais gains se cachent dans vos projets : comprendre et faire évoluer ce qui existe déjà, clarifier vos façons de faire, bâtir des pratiques durables. Ce virage ne se prend pas dans un webinaire — il se prend en faisant, ensemble, sur votre propre travail.",
+      lead: "La plupart des organisations ont déjà accès à des outils d’IA. Le défi est de les intégrer au travail réel. Ce virage ne se prend pas dans un webinaire : il se prend en faisant, ensemble, sur votre propre travail.",
       cards: [
         { t: 'Des licences,|pas encore de pratiques', d: "Les outils sont disponibles, mais les façons de travailler restent les mêmes." },
+        { t: 'Des niveaux|très variés', d: "Quelques personnes explorent déjà l’IA pendant que d’autres débutent. Sans cadre commun, les écarts se creusent." },
         { t: 'Faire évoluer ses méthodes|est exigeant', d: "Revoir des façons de faire éprouvées demande du temps, l’appui d’experts et un cadre sûr pour expérimenter." },
         { t: 'Les essais|restent des essais', d: "Les démonstrations impressionnent, puis le quotidien reprend le dessus." },
       ],
@@ -51,30 +52,41 @@ const COPY = {
           { t: 'Une formation générique', d: "Le contenu porte sur vos outils, vos processus et vos défis." },
           { t: 'Une démonstration', d: "Les participants font le travail, les experts les guident." },
           { t: 'Un mandat clé en main', d: "Vos équipes repartent capables de poursuivre seules." },
+          { t: 'Un produit fini', d: "Le Burst produit des prototypes ; leur mise en production est souvent une étape distincte." },
         ],
       },
     },
     what: {
       eyebrow: 'Le Burst',
       title: 'Un format intensif|pour apprendre~en faisant.',
-      lead: "Deux à deux jours et demi. De vraies équipes, de vrais projets, vos outils d’IA. Pas un cours magistral — un sprint concret qui change la façon de travailler de vos équipes.",
-      modesIntro: 'Trois modes d’apprentissage combinés, dans le bon ordre',
+      lead: "Une formation-action intensive : une demi-journée de mise à niveau, puis deux jours en sous-équipes sur vos défis réels, avec l’appui d’un duo d’experts. Pas un cours magistral : vos équipes réalisent elles-mêmes des prototypes concrets.",
+      modesIntro: 'Trois modes d’apprentissage combinés',
       cards: [
-        { t: 'Apprentissage', d: "On te montre les choses : les outils, les méthodes et les bonnes pratiques." },
-        { t: 'Pratique', d: "Tu réalises un défi concret sur un vrai projet, pas un exemple jouet." },
-        { t: 'Échange', d: "Tu échanges avec les pairs sur leurs apprentissages et leurs problématiques." },
+        { t: 'Apprendre', d: "Les bons outils, méthodes et pratiques, présentés aux bons moments." },
+        { t: 'Pratiquer', d: "Un défi réel, tiré du travail des participants, plutôt qu’un exercice fictif." },
+        { t: 'Échanger', d: "Des debriefs entre équipes : ce qui fonctionne, les blocages, les découvertes." },
       ],
       roles: {
         heading: 'La formule magique :|deux rôles complémentaires',
         sub: "C’est cette combinaison qui fait vraiment fonctionner le format.",
         items: [
-          { icon: 'users', t: 'Un animateur', d: "Organise les équipes, les stimule et les fait progresser tout au long du Burst." },
-          { icon: 'sparkles', t: 'Un spécialiste', d: "Accompagne, débloque et forme les gens en direct, au moment où ça compte." },
+          { icon: 'users', t: 'L’animateur', d: "Structure la démarche, rythme les blocs de travail et fait progresser chaque équipe vers sa démonstration." },
+          { icon: 'sparkles', t: 'L’expert en IA', d: "Accompagne, débloque et forme en temps réel, au moment où une équipe en a besoin." },
         ],
       },
       levels: {
         heading: 'Débutants~et utilisateurs avancés,|dans la même salle',
-        d: "Le Burst fonctionne aussi bien avec des gens qui débutent qu’avec des utilisateurs avancés. La mise à niveau amène chacun au même point. Les plus avancés proposent des défis, servent de référence dans leur sous-équipe et partagent leurs façons de faire. Tout le monde y trouve son compte.",
+        d: "Le Burst fonctionne aussi bien avec des gens qui débutent qu’avec des utilisateurs avancés. La mise à niveau amène chacun au même point, et vos utilisateurs avancés deviennent des multiplicateurs :",
+        points: ['proposent des défis à fort potentiel', 'partagent leurs agents, skills et façons de faire', 'servent de référence dans une sous-équipe', 'portent l’élan après le Burst'],
+      },
+      ingredients: {
+        heading: 'Les ingrédients|qui font la différence',
+        items: [
+          { t: 'Une mise à niveau', d: "adaptée au niveau et aux besoins de chacun" },
+          { t: 'Des défis réels', d: "choisis et cadrés avec vous avant le Burst" },
+          { t: 'Des équipes mixtes', d: "de 3 à 5 personnes aux profils variés" },
+          { t: 'Une démonstration', d: "comme ligne d’arrivée pour chaque équipe" },
+        ],
       },
     },
     pourQui: {
@@ -98,14 +110,18 @@ const COPY = {
     },
     deroule: {
       eyebrow: 'Le déroulé',
-      title: 'Deux jours,|cinq temps forts,|une démo.',
+      title: 'Deux jours et demi,|cinq temps forts,|des démos.',
       note: "Un rythme éprouvé : on met tout le monde à niveau, puis on livre.",
       steps: [
-        { n: '01', t: 'Onboarding & accès', d: "On installe les outils, on valide les accès et on aligne les façons de travailler (Jour 0)." },
-        { n: '02', t: 'Blocs de travail', d: "Les équipes attaquent un vrai projet, en autonomie encadrée." },
-        { n: '03', t: 'Débriefs', d: "À chaque étape, on partage ce qui marche, les frictions et les patterns qui émergent." },
-        { n: '04', t: 'Démos en direct', d: "Chaque équipe présente sa démo fonctionnelle devant le groupe." },
-        { n: '05', t: 'Apprentissages', d: "On récolte les acquis et on planifie comment les réinvestir dès la semaine suivante." },
+        { n: '01', t: 'Mise à niveau', d: "Un tronc commun sur les méthodes, puis des activités adaptées au niveau de chacun." },
+        { n: '02', t: 'Blocs de travail', d: "Les sous-équipes avancent sur leur défi, en autonomie guidée." },
+        { n: '03', t: 'Debriefs', d: "Ce qui fonctionne, les blocages et les découvertes sont partagés entre équipes." },
+        { n: '04', t: 'Démonstrations', d: "Chaque équipe présente son prototype ou son projet." },
+        { n: '05', t: 'Apprentissages', d: "Les acquis sont consolidés pour être réinvestis dans le travail." },
+      ],
+      around: [
+        { t: 'Avant', d: "Cadrage, participants, défis et accès, à distance." },
+        { t: 'Après', d: "Synthèse, sondage et suites possibles." },
       ],
     },
     formules: {
@@ -117,19 +133,19 @@ const COPY = {
         {
           key: 'A', name: 'Intensif', tag: 'Mode immersion', tagline: 'Apprendre, pratiquer et échanger|pour adopter l’IA',
           s1: '0,5 – 1 j', s1l: 'en immersion', s2: '4 – 20', s2l: 'participants',
-          bullets: ['Apprentissage guidé des outils et des bonnes pratiques', 'Un défi concret à réaliser en équipe — pas juste de la théorie', 'Échanges entre pairs sur les apprentissages et les blocages', 'Animateur + spécialiste pour vous faire progresser', 'Livrable : premières démos + réflexes d’usage au quotidien'],
+          bullets: ['Apprentissage guidé des outils et des bonnes pratiques', 'Un défi concret à réaliser en équipe — pas juste de la théorie', 'Échanges entre pairs sur les apprentissages et les blocages', 'Animateur + expert en IA pour vous faire progresser', 'Livrable : premières démos + réflexes d’usage au quotidien'],
           cta: 'Choisir cette formule →', accent: '#008cc1', accentHover: '#00648C', bg: '#f0f7fb', line: '#c8dde8',
         },
         {
           key: 'B', name: 'Actif', tag: 'Mode projet', tagline: '2,5 jours pour livrer|sur vos projets',
-          s1: '2,5 jours', s1l: 'onboarding + 2 jours', s2: '3 – 6', s2l: 'équipes',
-          bullets: ['Jour 0 d’onboarding et de formation', 'Équipes sur de vrais projets, pas des exemples jouets', 'Démos fonctionnelles en direct', 'Animateur + spécialiste tout au long', 'Livrable : démos + skills réutilisables + nouvelles pratiques'],
+          s1: '2,5 jours', s1l: 'mise à niveau + 2 jours', s2: '4 – 20', s2l: 'participants',
+          bullets: ['Une demi-journée de mise à niveau', 'Équipes sur de vrais projets, pas des exemples jouets', 'Démos fonctionnelles en direct', 'Animateur + expert en IA tout au long', 'Sondage des participants : apprentissages, satisfaction, potentiel de réutilisation', 'Livrable : prototypes présentés entre équipes + synthèse des apprentissages + pratiques à réutiliser'],
           cta: 'Choisir cette formule →', accent: '#238251', accentHover: '#1a6b3a', bg: '#f2f8f4', line: '#b8d8c4',
         },
         {
           key: 'C', name: 'Itératif', tag: 'Tout inclus', tagline: 'Plusieurs Bursts + formation|+ accompagnement',
           s1: 'Sur mesure', s1l: 'durée adaptée', s2: 'illimité', s2l: 'participants / équipes',
-          bullets: ['Plusieurs Bursts, avec plusieurs équipes', 'Onboarding et formation des équipes', 'Accompagnement et suivis de projets', 'Participants et équipes illimités', 'Livrable : capacité d’innovation ancrée + montée en charge'],
+          bullets: ['Plusieurs Bursts, avec plusieurs équipes', 'Mise à niveau et formation des équipes', 'Accompagnement vers l’adoption ou l’opérationnalisation des meilleurs prototypes', 'Participants et équipes illimités', 'Livrable : capacité d’innovation ancrée + montée en charge'],
           cta: 'Choisir cette formule →', accent: '#004764', accentHover: '#00648C', bg: '#f0f4f7', line: '#c0ccd6',
         },
         {
@@ -143,7 +159,7 @@ const COPY = {
     proof: {
       eyebrow: 'La preuve',
       title: 'Éprouvé sur le terrain.|L’exemple Croesus.',
-      lead: "Plus de cinq Bursts menés avec différentes équipes de Croesus, fintech primée en gestion de patrimoine.",
+      lead: "Plus de cinq Bursts menés avec différentes équipes de Croesus, fintech primée en gestion de patrimoine. Auprès de plusieurs clients : un usage de l’IA plus efficace, les meilleures pratiques adoptées et des apprentissages partagés entre équipes.",
       stats: [
         { big: '5+', small: 'Bursts avec différentes équipes' },
         { big: '20', small: 'équipes de 3 à 5 personnes ont livré une démo fonctionnelle dès leur premier Burst' },
@@ -160,15 +176,19 @@ const COPY = {
       eyebrow: 'Questions fréquentes',
       title: 'Ce qu’on~nous demande le plus',
       items: [
-        { q: 'Est-ce que notre travail reste confidentiel ?', a: "Oui. On travaille dans votre environnement, avec vos règles de sécurité. Rien ne sort de chez vous." },
+        { q: 'Est-ce que notre travail reste confidentiel ?', a: "Oui. Les informations partagées sont traitées en toute confidentialité, et vous demeurez propriétaire des prototypes, contenus, skills et agents développés par vos équipes." },
         { q: 'Faut-il déjà savoir travailler avec l’IA ?', a: "Non. La mise à niveau amène chacun au même point, quel que soit son niveau. Les utilisateurs déjà avancés y trouvent aussi leur compte : ils servent de relais dans leur sous-équipe et repartent avec de nouvelles pratiques." },
-        { q: 'Combien de participants ?', a: "De 4 à 20 selon la formule ; les équipes de travail comptent de 4 à 8 personnes." },
-        { q: 'Sur quels projets travaille-t-on ?', a: "Sur de vrais items de votre backlog, choisis avec vous avant l’événement." },
-        { q: 'En présentiel ou à distance ?', a: "Les deux sont possibles. Le présentiel maximise l’énergie et la collaboration." },
+        { q: 'Combien de participants ?', a: "De 4 à 20 participants par Burst, en sous-équipes de 3 à 5 personnes aux profils variés." },
+        { q: 'Sur quels projets travaille-t-on ?', a: "Sur de vrais défis tirés du travail des participants, choisis et cadrés avec vous avant le Burst." },
+        { q: 'Avec quels outils ?', a: "Ceux que votre organisation a approuvés : Microsoft Copilot, Claude, ChatGPT ou Gemini, par exemple. On valide licences et accès avec vous avant le Burst, pour éviter tout faux départ." },
+        { q: 'Et la sécurité ?', a: "Elle fait partie du programme dès la mise à niveau : quelles données confier à l’IA, utiliser les outils approuvés, limiter les accès, vérifier les résultats et repérer les instructions piégées. Ces repères complètent votre politique d’usage de l’IA, sans la remplacer." },
+        { q: 'En présentiel ou à distance ?', a: "La préparation et la synthèse se font à distance. Le Burst lui-même se vit sur place, 2,5 jours consécutifs, en français ou en anglais." },
+        { q: 'Et après le Burst ?', a: "Vos équipes repartent capables de poursuivre seules. Quand un prototype mérite d’aller plus loin, on peut les accompagner vers une solution opérationnelle, dans une offre distincte." },
       ],
     },
     form: {
       title: 'Planifions|votre Burst',
+      lead: "Un Burst conçu pour que vos équipes ne se contentent pas de découvrir l’IA, mais commencent réellement à transformer leur travail avec elle.",
       sub: '6 questions · moins de 2 minutes',
       q1: '1. Qu’est-ce qui vous amène ici ?',
       q1opts: ['Découvrir l’IA en équipe', 'Livrer sur un vrai projet', 'Ancrer de nouvelles pratiques', 'Autre / pas encore sûr'],
@@ -193,7 +213,7 @@ const COPY = {
   en: {
     nav: { burst: 'The Burst', pourQui: 'Who it’s for', formules: 'Formats', cta: 'Book a Burst' },
     hero: {
-      eyebrow: 'AI Service · innovation.expert',
+      eyebrow: 'AI Burst · Adopting AI through practice',
       title1: 'Your teams,',
       title2: 'ready to',
       titleAccent: 'build with AI.',
@@ -204,9 +224,10 @@ const COPY = {
     problem: {
       eyebrow: 'The reality',
       title: 'AI changes~everything —|but not on its own.',
-      lead: "Most organizations buy the licenses, run a demo… and nothing changes in how teams actually work. The real gains hide inside your projects: understanding and evolving what already exists, clarifying your ways of working, building durable practices. That shift doesn’t happen in a webinar — it happens by doing, together, on your own work.",
+      lead: "Most organizations already have access to AI tools. The challenge is to build them into real work. That shift doesn’t happen in a webinar: it happens by doing, together, on your own work.",
       cards: [
         { t: 'Licenses,|not yet practices', d: "The tools are there, but the ways of working stay the same." },
+        { t: 'Very uneven|levels', d: "A few people are already exploring AI while others are just starting. Without a shared framework, the gaps widen." },
         { t: 'Evolving your methods|is demanding', d: "Rethinking proven ways of working takes time, expert support and a safe space to experiment." },
         { t: 'Trials|stay trials', d: "Demos impress, then day-to-day work takes over again." },
       ],
@@ -217,30 +238,41 @@ const COPY = {
           { t: 'Generic training', d: "The content is about your tools, your processes and your challenges." },
           { t: 'A demo', d: "Participants do the work; the experts guide them." },
           { t: 'A turnkey mandate', d: "Your teams leave able to keep going on their own." },
+          { t: 'A finished product', d: "The Burst produces prototypes; putting them into production is often a separate step." },
         ],
       },
     },
     what: {
       eyebrow: 'The Burst',
       title: 'An intensive format|for learning by doing.',
-      lead: "Two to two-and-a-half days. Real teams, real projects, your AI tools. Not a lecture — a hands-on sprint that changes how your teams work.",
-      modesIntro: 'Three learning modes combined, in the right order',
+      lead: "An intensive learning-by-doing program: a half-day to bring everyone up to speed, then two days in sub-teams on your real challenges, backed by a duo of experts. Not a lecture: your teams build concrete prototypes themselves.",
+      modesIntro: 'Three learning modes combined',
       cards: [
-        { t: 'Learn', d: "We show you the tools, the methods and the best practices." },
-        { t: 'Practice', d: "You tackle a concrete challenge on a real project, not a toy example." },
-        { t: 'Exchange', d: "You exchange with peers on their learnings and their challenges." },
+        { t: 'Learn', d: "The right tools, methods and practices, introduced at the right moments." },
+        { t: 'Practice', d: "A real challenge, drawn from the participants’ own work, rather than a made-up exercise." },
+        { t: 'Exchange', d: "Debriefs between teams: what works, what blocks, what people discover." },
       ],
       roles: {
         heading: 'The magic formula:|two complementary roles',
         sub: "It’s that combination that truly makes the format work.",
         items: [
-          { icon: 'users', t: 'A facilitator', d: "Organizes the teams, energizes them and drives their progress throughout the Burst." },
-          { icon: 'sparkles', t: 'A specialist', d: "Coaches, unblocks and trains people live, right when it matters." },
+          { icon: 'users', t: 'The facilitator', d: "Structures the approach, paces the work blocks and moves each team toward its demo." },
+          { icon: 'sparkles', t: 'The AI expert', d: "Coaches, unblocks and trains in real time, right when a team needs it." },
         ],
       },
       levels: {
         heading: 'Beginners~and advanced users,|in the same room',
-        d: "The Burst works just as well with people who are starting out as with advanced users. The onboarding brings everyone to the same starting point. The most advanced propose challenges, act as go-to people in their sub-team and share how they work. Everyone gets something out of it.",
+        d: "The Burst works just as well with beginners as with advanced users. Getting up to speed brings everyone to the same starting point, and your advanced users become multipliers:",
+        points: ['propose high-potential challenges', 'share their agents, skills and ways of working', 'act as go-to people in a sub-team', 'carry the momentum after the Burst'],
+      },
+      ingredients: {
+        heading: 'The ingredients|that make the difference',
+        items: [
+          { t: 'Getting up to speed', d: "adapted to each person’s level and needs" },
+          { t: 'Real challenges', d: "chosen and framed with you before the Burst" },
+          { t: 'Mixed teams', d: "of 3 to 5 people with varied profiles" },
+          { t: 'A demo', d: "as the finish line for every team" },
+        ],
       },
     },
     pourQui: {
@@ -264,14 +296,18 @@ const COPY = {
     },
     deroule: {
       eyebrow: 'How it works',
-      title: 'Two days,|five key moments,|one demo.',
+      title: 'Two and a half days,|five key moments,|working demos.',
       note: "A proven rhythm: level everyone up, then ship.",
       steps: [
-        { n: '01', t: 'Onboarding & access', d: "We install the tools, validate access and align on how to work (Day 0)." },
-        { n: '02', t: 'Work blocks', d: "Teams tackle a real project, with guided autonomy." },
-        { n: '03', t: 'Debriefs', d: "At each step we share what works, the friction, and the patterns that emerge." },
-        { n: '04', t: 'Live demos', d: "Each team presents its working demo in front of the group." },
-        { n: '05', t: 'Learnings', d: "We capture the takeaways and plan how to reinvest them the following week." },
+        { n: '01', t: 'Getting up to speed', d: "A common core on methods, then activities adapted to each person’s level." },
+        { n: '02', t: 'Work blocks', d: "Sub-teams move forward on their challenge, with guided autonomy." },
+        { n: '03', t: 'Debriefs', d: "What works, what blocks and what people discover is shared between teams." },
+        { n: '04', t: 'Demos', d: "Each team presents its prototype or project." },
+        { n: '05', t: 'Learnings', d: "The takeaways are consolidated so they can be reinvested in the work." },
+      ],
+      around: [
+        { t: 'Before', d: "Framing, participants, challenges and access, done remotely." },
+        { t: 'After', d: "Synthesis, survey and possible next steps." },
       ],
     },
     formules: {
@@ -283,19 +319,19 @@ const COPY = {
         {
           key: 'A', name: 'Intensive', tag: 'Immersion mode', tagline: 'Learn, practise and exchange|to adopt AI',
           s1: '0.5 – 1 d', s1l: 'immersive', s2: '4 – 20', s2l: 'participants',
-          bullets: ['Guided learning of the tools and best practices', 'A concrete challenge to tackle as a team — not just theory', 'Peer exchange on learnings and blockers', 'Facilitator + specialist to drive your progress', 'Deliverable: first demos + everyday usage reflexes'],
+          bullets: ['Guided learning of the tools and best practices', 'A concrete challenge to tackle as a team — not just theory', 'Peer exchange on learnings and blockers', 'Facilitator + AI expert to drive your progress', 'Deliverable: first demos + everyday usage reflexes'],
           cta: 'Choose this format →', accent: '#008cc1', accentHover: '#00648C', bg: '#f0f7fb', line: '#c8dde8',
         },
         {
           key: 'B', name: 'Active', tag: 'Project mode', tagline: '2.5 days to ship|on your projects',
-          s1: '2.5 days', s1l: 'onboarding + 2 days', s2: '3 – 6', s2l: 'teams',
-          bullets: ['Day 0 onboarding and training', 'Teams on real projects, not toy examples', 'Live, working demos', 'Facilitator + specialist throughout', 'Deliverable: demos + reusable skills + new practices'],
+          s1: '2.5 days', s1l: 'half-day + 2 days', s2: '4 – 20', s2l: 'participants',
+          bullets: ['A half-day to get up to speed', 'Teams on real projects, not toy examples', 'Live, working demos', 'Facilitator + AI expert throughout', 'Participant survey: learnings, satisfaction, reuse potential', 'Deliverable: prototypes presented across teams + synthesis of learnings + practices to reuse'],
           cta: 'Choose this format →', accent: '#238251', accentHover: '#1a6b3a', bg: '#f2f8f4', line: '#b8d8c4',
         },
         {
           key: 'C', name: 'Iterative', tag: 'All-in', tagline: 'Several Bursts + training|+ coaching',
           s1: 'Custom', s1l: 'adapted duration', s2: 'unlimited', s2l: 'participants / teams',
-          bullets: ['Several Bursts, with several teams', 'Team onboarding and training', 'Coaching and project follow-ups', 'Unlimited participants and teams', 'Deliverable: embedded innovation capability + scale-up'],
+          bullets: ['Several Bursts, with several teams', 'Getting teams up to speed and trained', 'Support toward adopting or operationalizing the best prototypes', 'Unlimited participants and teams', 'Deliverable: embedded innovation capability + scale-up'],
           cta: 'Choose this format →', accent: '#004764', accentHover: '#00648C', bg: '#f0f4f7', line: '#c0ccd6',
         },
         {
@@ -309,7 +345,7 @@ const COPY = {
     proof: {
       eyebrow: 'The proof',
       title: 'Proven in the field.|The Croesus example.',
-      lead: "More than five Bursts run with different teams at Croesus, an award-winning wealth-management fintech.",
+      lead: "More than five Bursts run with different teams at Croesus, an award-winning wealth-management fintech. With several clients: more effective use of AI, best practices adopted and learnings shared across teams.",
       stats: [
         { big: '5+', small: 'Bursts with different teams' },
         { big: '20', small: 'teams of 3 to 5 people shipped a working demo in their very first Burst' },
@@ -326,15 +362,19 @@ const COPY = {
       eyebrow: 'FAQ',
       title: 'What we get|asked most',
       items: [
-        { q: 'Does our work stay confidential?', a: "Yes. We work in your environment, with your security rules. Nothing leaves your walls." },
+        { q: 'Does our work stay confidential?', a: "Yes. Everything you share is treated as confidential, and you remain the owner of the prototypes, content, skills and agents your teams develop." },
         { q: 'Do we need to already know how to work with AI?', a: "No. The onboarding brings everyone to the same starting point, whatever their level. Advanced users get something out of it too: they act as go-to people in their sub-team and leave with new practices." },
-        { q: 'How many participants?', a: "From 4 to 20 depending on the format; work teams are 4 to 8 people." },
-        { q: 'What projects do we work on?', a: "On real items from your backlog, chosen with you before the event." },
-        { q: 'In person or remote?', a: "Both are possible. In person maximizes energy and collaboration." },
+        { q: 'How many participants?', a: "From 4 to 20 participants per Burst, in sub-teams of 3 to 5 people with varied profiles." },
+        { q: 'What projects do we work on?', a: "On real challenges drawn from the participants’ own work, chosen and framed with you before the Burst." },
+        { q: 'Which tools do we use?', a: "The ones your organization has approved: Microsoft Copilot, Claude, ChatGPT or Gemini, for example. We validate licenses and access with you before the Burst, to avoid any false start." },
+        { q: 'What about security?', a: "It’s part of the program from the very first half-day: which data to entrust to AI, using approved tools, limiting access, checking results and spotting hidden instructions. These guidelines complement your AI use policy; they don’t replace it." },
+        { q: 'In person or remote?', a: "Preparation and synthesis are done remotely. The Burst itself happens on site, over 2.5 consecutive days, in French or English." },
+        { q: 'What happens after the Burst?', a: "Your teams leave able to keep going on their own. When a prototype deserves to go further, we can support them toward an operational solution, as a separate engagement." },
       ],
     },
     form: {
       title: 'Let’s plan|your Burst',
+      lead: "A Burst designed so your teams don’t just discover AI, but actually start transforming their work with it.",
       sub: '6 questions · under 2 minutes',
       q1: '1. What brings you here?',
       q1opts: ['Discover AI as a team', 'Ship on a real project', 'Embed new practices', 'Other / not sure yet'],
@@ -375,7 +415,8 @@ function fixSpaces(str, lang) {
       .replace(/ :/g, `${NBSP}:`)
       .replace(/« /g, `«${NBSP}`);
   }
-  return s;
+  // Keep the last two words together: no word alone on the last line.
+  return s.replace(/ (\S+)$/, `${NBSP}$1`);
 }
 
 function typo(value, lang) {
@@ -388,9 +429,6 @@ function typo(value, lang) {
 }
 
 const C = { fr: typo(COPY.fr, 'fr'), en: typo(COPY.en, 'en') };
-
-/* Keeps the last two words of a paragraph together, so no word sits alone on the last line. */
-const noOrphan = (str) => str.replace(/ (\S+)$/, `${NBSP}$1`);
 
 /* ---- Small building blocks ---------------------------------------- */
 
@@ -602,7 +640,7 @@ export default function Home() {
           <h2 className={`${H2} mb-5`} style={{ color: '#004764' }}><Phrases text={t.problem.title} /></h2>
           <p className="text-base leading-relaxed text-pretty" style={{ color: '#00648C' }}>{t.problem.lead}</p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {t.problem.cards.map((c) => (
             <div key={c.t} className="p-7 rounded-2xl" style={{ backgroundColor: '#F2F1F0' }}>
               <h3 className="font-bold text-base mb-2" style={{ color: '#004764' }}><Phrases text={c.t} /></h3>
@@ -617,7 +655,7 @@ export default function Home() {
         {/* What the Burst isn't */}
         <div className="mt-8 rounded-2xl p-7 sm:p-8" style={{ border: '1px solid #e4e8ea' }}>
           <h3 className="font-bold text-base mb-5" style={{ color: '#004764' }}>{t.problem.not.heading}</h3>
-          <ul className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {t.problem.not.items.map((it) => (
               <li key={it.t} className="flex gap-3 items-start">
                 <span className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold mt-0.5" style={{ backgroundColor: '#F2F1F0', color: '#7d94a1' }} aria-hidden="true">✕</span>
@@ -673,10 +711,31 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Mixed AI levels */}
+          {/* Ingredients that make the difference */}
+          <div className="mt-8">
+            <h3 className="font-bold text-lg mb-4" style={{ color: '#004764' }}><Phrases text={t.what.ingredients.heading} /></h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {t.what.ingredients.items.map((x) => (
+                <div key={x.t} className="rounded-2xl p-5 bg-white" style={{ border: '1px solid #e4e8ea' }}>
+                  <p className="font-bold text-sm" style={{ color: '#004764' }}>{x.t}</p>
+                  <p className="text-sm leading-relaxed mt-1 text-pretty" style={{ color: '#00648C' }}>{x.d}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Mixed AI levels: advanced users as multipliers */}
           <div className="mt-6 rounded-2xl p-6 sm:p-8 bg-white" style={{ border: '1px solid #e4e8ea', borderLeft: '4px solid #0BB89B' }}>
             <h3 className="font-bold text-lg mb-2" style={{ color: '#004764' }}><Phrases text={t.what.levels.heading} /></h3>
             <p className="text-sm leading-relaxed max-w-3xl text-pretty" style={{ color: '#00648C' }}>{t.what.levels.d}</p>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mt-4">
+              {t.what.levels.points.map((pt) => (
+                <li key={pt} className="flex items-start gap-2 text-sm" style={{ color: '#004764' }}>
+                  <span className="mt-0.5 flex-shrink-0" style={{ color: '#0BB89B' }}>✓</span>
+                  {pt}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
@@ -729,6 +788,15 @@ export default function Home() {
                 <p className="text-sm leading-relaxed text-pretty" style={{ color: '#00648C' }}>{s.d}</p>
               </div>
             ))}
+            {/* Before / after, kept to one line each: the detailed agenda stays off the site */}
+            <div className="rounded-2xl p-7 flex flex-col justify-center gap-4" style={{ border: '1px dashed #c0ccd6' }}>
+              {t.deroule.around.map((a) => (
+                <div key={a.t}>
+                  <p className="text-xs font-semibold uppercase tracking-widest" style={{ color: '#238251' }}>{a.t}</p>
+                  <p className="text-sm leading-relaxed mt-1 text-pretty" style={{ color: '#00648C' }}>{a.d}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -810,7 +878,7 @@ export default function Home() {
           {/* Testimonial — final quote, as approved by Vincent Lévesque */}
           <div className="mt-16 rounded-3xl px-8 sm:px-14 py-12 text-center" style={{ backgroundColor: '#004764' }}>
             <p className="text-xl sm:text-2xl font-medium leading-relaxed mb-8 max-w-3xl mx-auto text-white text-pretty">
-              {lang === 'fr' ? `«${NBSP}${noOrphan(t.testimonial.quote)}${NBSP}»` : `“${noOrphan(t.testimonial.quote)}”`}
+              {lang === 'fr' ? `«${NBSP}${t.testimonial.quote}${NBSP}»` : `“${t.testimonial.quote}”`}
             </p>
             <div className="flex items-center justify-center gap-3">
               <img src="/img/vincent.jpg" alt={t.testimonial.name} className="w-12 h-12 rounded-full object-cover" />
@@ -846,8 +914,9 @@ export default function Home() {
       <section id="inscription" className="text-white py-16 scroll-mt-4" style={{ backgroundColor: '#004764' }}>
         <div className="max-w-xl mx-auto px-6 sm:px-8">
           <div className="text-center mb-8">
-            <h2 className={`${H2} mb-2`}><Phrases text={t.form.title} /></h2>
-            <p style={{ color: 'rgba(255,255,255,0.65)' }}>{t.form.sub}</p>
+            <h2 className={`${H2} mb-3`}><Phrases text={t.form.title} /></h2>
+            <p className="text-base leading-relaxed mb-3 text-pretty" style={{ color: 'rgba(255,255,255,0.85)' }}>{t.form.lead}</p>
+            <p className="text-sm" style={{ color: 'rgba(255,255,255,0.6)' }}>{t.form.sub}</p>
           </div>
 
           {submitted ? (
@@ -886,7 +955,7 @@ export default function Home() {
               {/* Q3 — AI tools (multi-select) */}
               <div>
                 <p className="text-sm font-semibold mb-2" style={{ color: 'rgba(255,255,255,0.85)' }}>
-                  {t.form.qTools} <span className="font-normal" style={{ color: 'rgba(255,255,255,0.5)' }}>· {t.form.qToolsHint}</span>
+                  {t.form.qTools} <span className="font-normal whitespace-nowrap" style={{ color: 'rgba(255,255,255,0.5)' }}>· {t.form.qToolsHint}</span>
                 </p>
                 <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
                   {t.form.toolsOpts.map(([label, sub]) => (
