@@ -6,7 +6,7 @@ const montserrat = Montserrat({ subsets: ["latin", "latin-ext"], variable: "--fo
 export const metadata = {
   title: "Le Burst — Vos équipes, prêtes à créer avec l'IA | innovation.expert",
   description:
-    "Le Burst est un atelier intensif où vos équipes apprennent à travailler avec l'IA sur vos vrais projets — et repartent avec une démo fonctionnelle, de nouvelles façons de collaborer et des compétences réutilisables.",
+    "Le Burst fait passer vos équipes de curieuses à adeptes de l'IA : un atelier intensif où elles appliquent l'IA à leurs vrais projets et changent pour de bon leur façon de travailler.",
   other: { "deploy-check": "github-auto-deploy-verify-1" },
 };
 
