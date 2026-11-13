@@ -28,8 +28,8 @@ const COPY = {
     nav: { burst: 'Le Burst', pourQui: 'Pour qui', formules: 'Formules', cta: 'Réserver un Burst' },
     hero: {
       eyebrow: 'Burst IA · Adopter l’IA par la pratique',
-      title1: 'Vos équipes,',
-      title2: 'prêtes à',
+      title1: 'Vos équipes, prêtes',
+      title2: 'à',
       titleAccent: 'créer avec l’IA.',
       sub: "Le Burst fait passer vos équipes de curieuses à adeptes de l’IA. Plus qu’une formation, plus qu’une démo : elles appliquent l’IA à leurs vrais projets et changent pour de bon leur façon de travailler. Après un Burst, aucun participant n’est revenu en arrière.",
       ctaPrimary: 'Réserver un Burst →',
@@ -214,8 +214,8 @@ const COPY = {
     nav: { burst: 'The Burst', pourQui: 'Who it’s for', formules: 'Formats', cta: 'Book a Burst' },
     hero: {
       eyebrow: 'AI Burst · Adopting AI through practice',
-      title1: 'Your teams,',
-      title2: 'ready to',
+      title1: 'Your teams, ready',
+      title2: 'to',
       titleAccent: 'build with AI.',
       sub: "The Burst takes your teams from AI-curious to AI adopters. More than training, more than a demo: they apply AI to their real projects and change the way they work for good. After a Burst, not a single participant has gone back.",
       ctaPrimary: 'Book a Burst →',
@@ -593,12 +593,10 @@ export default function Home() {
             <span className="w-2 h-2 rounded-full inline-block" style={{ backgroundColor: '#0BB89B' }} />
             {t.hero.eyebrow}
           </span>
-          <h1 className="text-[2rem] sm:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-tight mb-7 text-white max-w-3xl">
+          {/* Two lines: « Vos équipes, prêtes » / « à créer avec l'IA. » */}
+          <h1 className="text-[clamp(1.5rem,8.2vw,2rem)] sm:text-5xl lg:text-6xl font-bold leading-[1.05] tracking-tight mb-7 text-white max-w-3xl">
             <span className="inline-block">{t.hero.title1}</span>{' '}
-            <span className="inline-block">
-              <span className="inline-block">{t.hero.title2}</span>{' '}
-              <span className="inline-block" style={{ color: '#0BB89B' }}>{t.hero.titleAccent}</span>
-            </span>
+            <span className="inline-block">{t.hero.title2}{NBSP}<span style={{ color: '#0BB89B' }}>{t.hero.titleAccent}</span></span>
           </h1>
           <p className="text-lg sm:text-xl leading-relaxed max-w-2xl mb-10 text-pretty" style={{ color: 'rgba(255,255,255,0.85)' }}>
             {t.hero.sub}
